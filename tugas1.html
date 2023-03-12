@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+        //membuat function baru 
+        $(document).ready(function () {
+            //membuat fungsi agar jika click button sembunyi1 akan menyembunyikan foto1 secara cepat
+            $(".sembunyi1").click(function () { 
+                $(".foto1").hide("fast") 
+            });
+            //membuat fungsi agar jika click button tampil1 akan menampilkan foto1 secara cepat
+            $(".tampil1").click(function () {
+                $(".foto1").show("fast") 
+            });
+            //membuat fungsi agar jika click button sembunyi2 akan menyembunyikan foto2 secara perlahan
+            $(".sembunyi2").click(function () {
+                $(".foto2").hide("slow") 
+            });
+            //membuat fungsi agar jika click button tampil2 akan menyembunyikan foto2 secara perlahan
+            $(".tampil2").click(function () { 
+                $(".foto2").show("slow") 
+            });
+        });
+
+    </script>
+	<title></title>
+</head>
+<body>
+    <!--Membuat button dengan nama class yang berbeda untuk dipanggil pada js-->
+	<button class="sembunyi1">Sembunyi gambar 1</button>
+    <button class="tampil1">Tampil gambar 1</button> <br><br>
+    <button class="sembunyi2">Sembunyikan gambar 2</button>
+    <button class="tampil2">Tampilkan gambar 2</button>
+    <!--Membuat gambar-->
+    <p><img class="foto1" src="images/carousel2.jpg" style="width: 400px;"></p>
+    <p><img class="foto2" src="images/carousel3.jpg" style="width: 400px;"></p>
+</body>
+</html>
